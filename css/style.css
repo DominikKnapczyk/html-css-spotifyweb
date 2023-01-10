@@ -1,0 +1,59 @@
+/* GENERAL */
+
+:root {
+  --header-height: 100px;
+  --footer-height: 100px;
+  --sidebar-width: 300px;
+}
+
+body {
+  color: white;
+}
+
+/* TOP CONTENT */
+
+.top-content {
+  display: flex;
+
+  height: calc(100vh - var(--footer-height));
+  background-color: rgb(20, 20, 20);
+}
+
+/* SIDEBAR*/
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: black;
+}
+
+/* CONTENT */
+
+.content {
+  width: calc(100% - var(--sidebar-width));
+  overflow: auto;
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+
+  height: var(--header-height);
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+/* MAIN */
+
+main {
+  height: 100%;
+  padding-top: var(--header-height);
+}
+
+/* FOOTER */
+
+footer { 
+  height: var(--footer-height);
+  background-color: rgb(45, 45, 45);
+}
