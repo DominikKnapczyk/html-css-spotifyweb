@@ -5,3 +5,31 @@
 	clear: both;
 	display: table;
 }
+
+/* DISPLAY */
+
+.block {
+	display: block;
+}
+
+/* TEXT */
+
+.bold {
+	font-weight: bold;
+}
+
+.grey1 {
+	color:#7b7b7b;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.fs24 {
+	font-size: 24px;
+}
+
+.fs35 {
+	font-size: 35px;
+}

@@ -1,3 +1,11 @@
+/* GENERAL */
+
+:root {
+  --header-height: 100px;
+  --player-height: 100px;
+  --sidebar-width: 300px;
+}
+
 body {
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -8,7 +16,7 @@ body {
 .top-content {
   display: flex;
 
-  height: calc(100vh - var(--footer-height));
+  height: calc(100vh - var(--player-height));
   background-color: rgb(20, 20, 20);
 }
 /* CONTENT */
@@ -38,9 +46,10 @@ main {
   padding-top: var(--header-height);
 }
 
-/* FOOTER */
+/* RESPONSIVE */
 
-footer { 
-  height: var(--footer-height);
-  background-color: rgb(45, 45, 45);
+@media screen and (max-width: 480px) { 
+  :root {
+    --sidebar-width: 50px;
+  }
 }
