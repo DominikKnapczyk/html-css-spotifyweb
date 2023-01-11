@@ -24,19 +24,42 @@ body {
 .content {
   width: calc(100% - var(--sidebar-width));
   overflow: auto;
+
+  background-color: #141922;
 }
 
 /* HEADER */
 
 header {
   position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
   height: var(--header-height);
   width: 100%;
-  background-color: black;
-  opacity: 0.8;
+  background-color: #0f131d;
+  opacity: 0.9;
 
   width: calc(100% - var(--sidebar-width));
+}
+
+.upgrade-button {
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+  background-color: #0f131d;
+  padding: 0 50px;
+  font-weight: bold;
+  position: relative;
+  right: 20px;
+}
+
+.upgrade-button:hover {
+  cursor: pointer;
+  width: 300px;
+  height: 55px;
 }
 
 /* MAIN */
@@ -51,5 +74,16 @@ main {
 @media screen and (max-width: 480px) { 
   :root {
     --sidebar-width: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+	.upgrade-button {
+    padding: 3px 5px;
+    font-size: 14px;
+  }
+  .upgrade-button:hover {
+    width: 180px;
+    height: 55px;
   }
 }

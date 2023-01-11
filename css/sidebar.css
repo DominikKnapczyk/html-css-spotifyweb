@@ -107,7 +107,7 @@ margin-right: 10px;
   align-self: center;
   width: 80%;
 
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 
 }
 
@@ -186,4 +186,5 @@ margin-right: 10px;
   .sidebar-bottom-install {
     border-bottom: none;
   }
+
 }
