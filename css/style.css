@@ -42,6 +42,8 @@ header {
   opacity: 0.9;
 
   width: calc(100% - var(--sidebar-width));
+
+  z-index: 1;
 }
 
 .upgrade-button {
