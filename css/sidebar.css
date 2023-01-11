@@ -146,13 +146,6 @@ margin-right: 10px;
 /* SIDEBAR RESPONSIVE */
 
 @media screen and (max-width: 480px) { 
-  :root {
-    --sidebar-width: 50px;
-  }
-  .sidebar {
-    width: 50px;
-    align-items: center;
-  }
 
   .sidebar  span {
     display: none;
@@ -186,5 +179,5 @@ margin-right: 10px;
   .sidebar-bottom-install {
     border-bottom: none;
   }
-
 }
+

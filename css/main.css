@@ -1,0 +1,28 @@
+nav {
+  text-align: center;
+  flex-direction: row;
+}
+
+nav > div {
+  display: inline-block;
+  margin: 20px 15px;
+  color: #777A7E;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+nav > div:hover {
+  color: white;
+  cursor: pointer;
+}
+
+nav:first-child {
+  margin-bottom: 1px solid green;
+}
+
+.green-underline {
+  width: 30px;
+  height: 2px;
+  background-color: #adff2f;
+  margin-left: 30px;
+}
