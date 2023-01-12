@@ -73,10 +73,35 @@ main {
 
 /* RESPONSIVE */
 
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  
+  :root {
+    --sidebar-width: 200px;
+  }
+
+  .grid {
+    justify-content: center;
+  }
+
+  .upgrade-button {
+    padding: 3px 5px;
+    font-size: 14px;
+  }
+  .upgrade-button:hover {
+    width: 180px;
+    height: 55px;
+  }
+}
+
 @media screen and (max-width: 480px) { 
  
   :root {
     --sidebar-width: 50px;
+    --header-height: 0px;
+  }
+
+  header {
+    display: none;
   }
 
   .sidebar {
@@ -95,24 +120,13 @@ main {
     padding: 3px 5px;
     font-size: 14px;
   }
-  .upgrade-button:hover {
-    width: 180px;
-    height: 55px;
-  }
-}
 
-@media screen and (min-width: 481px) and (max-width: 600px) {
-	.upgrade-button {
-    padding: 3px 5px;
-    font-size: 14px;
-  }
   .upgrade-button:hover {
     width: 180px;
     height: 55px;
   }
 
-  :root {
-    --sidebar-width: 200px;
+  .grid {
+    justify-content: center;
   }
 }
-

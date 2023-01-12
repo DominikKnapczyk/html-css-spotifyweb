@@ -1,4 +1,3 @@
-
 /* PLAYER */
 
 .player { 
@@ -49,7 +48,9 @@
   flex-direction: column;
   align-items: center;
 
-  width: 400px;
+  min-width: 400px;
+  width: 40%;
+  max-width: 800px;
 }
 
 .middle-section-top {
@@ -127,8 +128,6 @@
 
 @media screen and (max-width: 992px) {
 
-
-
   .right-section i {
     font-size: 14px;
   }
@@ -142,8 +141,26 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and  (max-width: 600px) {
 
+  .left-section {
+    display: none;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .player {
+    justify-content: center;
+  }
+
+  .time-bar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
 
   .middle-section-top i{
     font-size: 20px;
@@ -168,6 +185,5 @@
   .right-section > .player-box {
     margin: 2px 0;
   }
-
 }
 
